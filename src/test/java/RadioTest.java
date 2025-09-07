@@ -16,6 +16,17 @@ public class RadioTest {
     }
 
     @Test
+    public void shouldMaxSetRadioStation(){
+        Radio rad = new Radio();
+        rad.setNomberRadioStation(10);
+
+        int expected = 0;
+        int actual = rad.getNomberRadioStation();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void shouldMinBorderlineSetRadioStation(){
         Radio rad = new Radio();
         rad.setNomberRadioStation(0);
@@ -87,10 +98,10 @@ public class RadioTest {
     @Test
     public void shouldDecreaseStation1p(){
         Radio rad = new Radio();
-        rad.setNomberRadioStation(7);
+        rad.setNomberRadioStation(1);
         rad.decreaseStation1p();
 
-        int expected = 6;
+        int expected = 0;
         int actual = rad.getNomberRadioStation();
 
         Assertions.assertEquals(expected, actual);
@@ -102,6 +113,28 @@ public class RadioTest {
         rad.setSoundVolume(85);
 
         int expected = 85;
+        int actual = rad.getSoundVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldMaxSetSoundVolume(){
+        Radio rad = new Radio();
+        rad.setSoundVolume(101);
+
+        int expected = 100;
+        int actual = rad.getSoundVolume();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldMinSetSoundVolume(){
+        Radio rad = new Radio();
+        rad.setSoundVolume(-1);
+
+        int expected = 0;
         int actual = rad.getSoundVolume();
 
         Assertions.assertEquals(expected, actual);
