@@ -123,7 +123,7 @@ public class RadioTest {
         Radio rad = new Radio();
         rad.setSoundVolume(101);
 
-        int expected = 100;
+        int expected = 0;
         int actual = rad.getSoundVolume();
 
         Assertions.assertEquals(expected, actual);

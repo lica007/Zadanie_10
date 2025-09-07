@@ -24,7 +24,6 @@ public class Radio {
 
     public void setSoundVolume (int newSoundVolume){
         if (newSoundVolume > 100){
-            soundVolume = 100;
             return;
         }
         if (newSoundVolume < 0){
