@@ -1,16 +1,16 @@
 package ru.netology.statistic;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Radio {
-    private int nomberRadioStation;
     private int soundVolume;
-
-    public int getNomberRadioStation() {
-        return nomberRadioStation;
-    }
-
-    public int getSoundVolume() {
-        return soundVolume;
-    }
+    private int stationCont = 10;
+    private int nomberRadioStation;
 
     public void setNomberRadioStation(int newNomberRadioStation) {
         if (newNomberRadioStation < 0) {
