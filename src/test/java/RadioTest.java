@@ -5,7 +5,7 @@ import ru.netology.statistic.Radio;
 public class RadioTest {
 
     @Test
-    public void shouldSetRadioStation(){
+    public void shouldSetRadioStation() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(5);
 
@@ -16,7 +16,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMaxSetRadioStation(){
+    public void shouldMaxSetRadioStation() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(10);
 
@@ -27,7 +27,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMinBorderlineSetRadioStation(){
+    public void shouldMinBorderlineSetRadioStation() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(0);
 
@@ -38,7 +38,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMaxBorderlineSetRadioStation(){
+    public void shouldMaxBorderlineSetRadioStation() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(9);
 
@@ -49,7 +49,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldNegativRadioStation(){
+    public void shouldNegativRadioStation() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(-5);
 
@@ -60,7 +60,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMaxBorderlineIncreaseStation1p(){
+    public void shouldMaxBorderlineIncreaseStation1p() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(9);
         rad.increaseStation1p();
@@ -72,7 +72,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseStation1p(){
+    public void shouldIncreaseStation1p() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(2);
         rad.increaseStation1p();
@@ -84,7 +84,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMinBorderlineDecreaseStation1p(){
+    public void shouldMinBorderlineDecreaseStation1p() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(0);
         rad.decreaseStation1p();
@@ -96,7 +96,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseStation1p(){
+    public void shouldDecreaseStation1p() {
         Radio rad = new Radio();
         rad.setNomberRadioStation(1);
         rad.decreaseStation1p();
@@ -108,7 +108,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetSoundVolume(){
+    public void shouldSetSoundVolume() {
         Radio rad = new Radio();
         rad.setSoundVolume(85);
 
@@ -119,7 +119,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMaxSetSoundVolume(){
+    public void shouldMaxSetSoundVolume() {
         Radio rad = new Radio();
         rad.setSoundVolume(101);
 
@@ -130,7 +130,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMinSetSoundVolume(){
+    public void shouldMinSetSoundVolume() {
         Radio rad = new Radio();
         rad.setSoundVolume(-1);
 
@@ -141,7 +141,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMinBorderlineSoundVolume(){
+    public void shouldMinBorderlineSoundVolume() {
         Radio rad = new Radio();
         rad.setSoundVolume(0);
 
@@ -152,7 +152,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMaxBorderlineSoundVolume(){
+    public void shouldMaxBorderlineSoundVolume() {
         Radio rad = new Radio();
         rad.setSoundVolume(100);
 
@@ -163,7 +163,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldIncreaseSoundVolume1p(){
+    public void shouldIncreaseSoundVolume1p() {
         Radio rad = new Radio();
         rad.setSoundVolume(10);
         rad.increaseSoundVolume();
@@ -175,7 +175,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMaxBorderlineIncreaseSoundVolume1p(){
+    public void shouldMaxBorderlineIncreaseSoundVolume1p() {
         Radio rad = new Radio();
         rad.setSoundVolume(100);
         rad.increaseSoundVolume();
@@ -187,7 +187,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDecreaseSoundVolume1p(){
+    public void shouldDecreaseSoundVolume1p() {
         Radio rad = new Radio();
         rad.setSoundVolume(10);
         rad.decreaseSoundVolume();
@@ -199,7 +199,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldMinBorderDecreaseSoundVolume1p(){
+    public void shouldMinBorderDecreaseSoundVolume1p() {
         Radio rad = new Radio();
         rad.setSoundVolume(0);
         rad.decreaseSoundVolume();
