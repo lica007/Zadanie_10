@@ -17,8 +17,8 @@ public class RadioTest {
 
     @Test
     public void shouldMaxSetRadioStation() {
-        Radio rad = new Radio(12);
-        rad.setNomberRadioStation(12);
+        Radio rad = new Radio();
+        rad.setNomberRadioStation(10);
 
         int expected = 0;
         int actual = rad.getNomberRadioStation();
@@ -61,8 +61,8 @@ public class RadioTest {
 
     @Test
     public void shouldMaxBorderlineIncreaseStation1p() {
-        Radio rad = new Radio(12);
-        rad.setNomberRadioStation(11);
+        Radio rad = new Radio();
+        rad.setNomberRadioStation(9);
         rad.increaseStation1p();
 
         int expected = 0;
@@ -97,7 +97,7 @@ public class RadioTest {
 
     @Test
     public void shouldDecreaseStation1p() {
-        Radio rad = new Radio(12);
+        Radio rad = new Radio();
         rad.setNomberRadioStation(1);
         rad.decreaseStation1p();
 
